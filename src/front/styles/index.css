@@ -1,3 +1,102 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(black, gray);
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box {
+  padding: 30px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid white;
+  background: linear-gradient(
+    145deg,
+    rgb(128, 128, 128, 0.7),
+    rgb(0, 0, 0, 0.7),
+    rgb(128, 128, 128, 0.7)
+  );
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 255px;
+  height: 64px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+input {
+  height: 40px;
+  padding: 12px;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background: none;
+  border: 2px white solid;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  height: 40px;
+  border-radius: 10px;
+  background: none;
+  border: 2px white solid;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  background: linear-gradient(
+    145deg,
+    rgb(128, 128, 128, 0.7),
+    rgb(0, 0, 0, 0.7),
+    rgb(128, 128, 128, 0.7)
+  );
+  text-align: end;
+  color: #ffffff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
